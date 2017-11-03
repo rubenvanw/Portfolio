@@ -1,0 +1,363 @@
+body {
+    font-family: 'Rubik', sans-serif; /*font voor de gehele website */
+    background-color: black;
+    margin: 0 auto;
+}
+
+body::-webkit-scrollbar { /*Maakt de achtergrond van de scrollbar zwart*/
+    width: 0.5em;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb { /*geeft the scroll "thumb" een blauwe kleur */
+    background-color: #5ad9ce;
+}
+
+/*pagina een*/
+.home {
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.home header {
+    width: 100%;
+    height: auto;
+    font-size: 1.10rem;
+    display: flex;
+    justify-content: space-between; /*plaatst header en nav aan uiteindes van de pagina */
+    align-items: baseline; /*plaatst nav en header op dezelfde regel hoogte */
+    position: fixed;
+    top: 0;
+}
+
+.home header h1 {
+    width: auto;
+    background-color: black;
+    padding: 0.5%;
+    border: ridge 2px #5ad9ce;
+    margin: 0;
+}
+
+.blue {
+    color: #5ad9ce;
+}
+
+.home nav {
+    width: 65%;
+    text-align: right;
+}
+
+.home nav h2 {
+    display: none; /* voor "correcte" document outline ;) */
+}
+
+.home ul {
+    margin: 0;
+}
+
+.home li {
+    display: inline;
+}
+
+.home a {
+    color: #5ad9ce;
+    background-color: black;
+    padding: 1% 1.5%;
+    border: ridge 2px #5ad9ce;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.home a:hover {
+    color: black;
+    background-color: #5ad9ce;
+}
+
+.home main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center; /*plaatst tektst in de center */
+    align-items: center;
+    text-align: center;
+}
+
+.hallo {
+    display: inline-block; /* inline-block om de span margin in de hooghte te geven */
+    font-size: 10rem;
+    margin: 2%;
+}
+
+.home main p {
+    width: 100%;
+    font-size: 2rem;
+}
+
+/*pagina een*/
+
+/*pagina twee*/
+.about {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+
+.boxEen {
+    width: 50%;
+    height: 100%;
+    color: black;
+    background-color: #5ad9ce;
+    display: flex;
+    justify-content: center; /*plaatst tektst in de center */
+    align-items: center;
+}
+
+.boxEen h2 {
+    font-size: 3rem;
+    border-bottom: solid 3px black;
+    margin: 3%;
+}
+
+.boxEen p {
+    font-size: 1.20rem;
+    font-weight: bold;
+}
+
+.boxTwee {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center; /*plaatst tektst in de center */
+    align-items: center;
+}
+
+.boxTwee main {
+    width: 75%;
+    height: auto;
+    font-size: 1.20rem;
+    font-weight: bold;
+    padding: 5%;
+    border: solid 3px #5ad9ce;
+}
+
+/*pagina twee*/
+
+/*pagina drie*/
+.hobby {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.overlay {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: 1; /*zorgt ervoor dat de h1 onder de gallery gaat */
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /*zorgt ervoor dat de h1 onder de gallery gaat */
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+
+.gallery img {
+    width: 33%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.hobbyToelichting {
+    width: 50%;
+    height: 100%;
+    background-color: #5ad9ce;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbyToelichting h2 {
+    font-size: 3rem;
+    border-bottom: solid 3px black;
+    margin: 2%;
+}
+
+.hobbyToelichting p {
+    font-size: 1.20rem;
+    margin: 1%;
+}
+
+/*pagina drie*/
+
+/*pagina vier */
+.opdrachten {
+    width: 100%;
+    height: auto;
+}
+
+.opdrachtenHeader {
+    width: 100%;
+    height: 10%;
+    color: #5ad9ce;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.opdrachtenHeader h2 {
+    margin-bottom: 0;
+}
+
+.opdrachten main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: auto;
+    color: white;
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+table, caption, td, th {
+    border: solid 1px #5ad9ce;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 1%;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 5px; /* Hier heb ik pixels gebruikt omdat percentages een resultaat geven wat ik niet wil */
+}
+
+tr:hover {
+    color: black;
+    background-color: #5ad9ce;
+}
+
+/*pagina vier*/
+
+/*pagina vijf */
+.contact {
+    width: 100%;
+    height: auto;
+    color: white;
+    border-top: solid 1px #5ad9ce;
+    background-color: black;
+}
+
+.contactHeader {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contactHeader h2 {
+    color: #5ad9ce;
+    padding: 1% 0 2.5% 0;
+}
+
+.contact main {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+form {
+    width: 15%;
+    height: 100%;
+    margin: 2.5% 10%;
+    display: inline-block;
+}
+
+label, textarea {
+    margin: 10% 0;
+    display: block
+}
+
+textarea {
+    font-family: 'Rubik', sans-serif; /*font moet specifiek worden aangegeven voor textarea */
+    padding: 5% 0;
+}
+
+textarea, input {
+    width: 100%;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-bottom: dotted 1px #5ad9ce;
+}
+
+textarea, input:focus { /*maakt van stippellijn een rechte lijn */
+    border-bottom: solid 1px #5ad9ce;;
+}
+
+.submit {
+    color: white;
+    padding: 10%;
+    border: solid 3px #5ad9ce;
+    border-radius: 7%;
+    margin-top: 5%;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    color: black;
+    background-color: #5ad9ce;;
+}
+
+.contactInfo {
+    width: auto;
+    margin: 2.5% 10%;
+    display: inline-block;
+}
+
+.contactInfo li {
+    list-style: none;
+}
+
+.contactInfo a {
+    color: #5ad9ce;;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+/*pagina vijf*/
